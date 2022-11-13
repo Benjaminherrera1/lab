@@ -1,15 +1,27 @@
 from docente import Docente
 
 class D_Regular(Docente):
-    def __init__(self, nc="", rut="", grado="", td="", fc="", tj=""):
+    def __init__(self, nc="", rut="", grado="", td="", fc="", tj="", bs=""):
         super().__init__(nc, rut, grado, td, fc)
-        self.__Tipo_jornada=tj
+        self.__Tipo_Jornada=tj
+        self.__Sueldo_Base=bs
+    
+    def SetTipoJornada(self, tj):
+        self.__Tipo_Jornada=tj
+    
+    def SetSueldoBase(self, bs):
+        self.__Sueldo_Base=bs
 
-def get_Tipo_jornada(self):
-    return self.__Tipo_jornada
+    def GetTipoJornada(self):
+        return self.__Tipo_Jornada
+    
+    def GetSueldoBase(self):
+        return self.__Sueldo_Base
+    
 
-def set_tipo_jornada(self, tj):
-    self.__Tipo_jornada=tj
+    
+    
+    
 
 
 

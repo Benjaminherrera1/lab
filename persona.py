@@ -1,19 +1,21 @@
 class Persona():
-    def __init__(self, nc="", rut=""):
-        self.__Nombre_completo=nc
-        self.__Rut=rut
+    def __init__(self, nc="", r=""):
+        self.__Nombre_Completo=nc
+        self.__Rut=r
+    
+    def SetNombreCompleto(self, nc):
+        self.__Nombre_Completo=nc
+    
+    def SetRut(self, r ):
+        self.__Rut=r
+    
+    def GetNombreCompleto(self):
+        return self.__Nombre_Completo
+    
+    def GetRut(self):
+        return self.__Rut
 
-def getNombre_completo(self):
-    return self.__Nombre_completo
 
-def setNombre_completo(self, nc ):
-    self.__Nombre_completo=nc
-
-def getRut(self):
-    return self.__Rut
-
-def setRut(self, rut ):
-    self.__Rut=rut
 
     
 
